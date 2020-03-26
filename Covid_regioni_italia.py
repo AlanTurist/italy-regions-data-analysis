@@ -8,7 +8,6 @@ import pandas as pd
 url = 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni-latest.csv'
 df = pd.read_csv(url,index_col=0, sep=",")
 
-
 reg = str(input("Inserire il nome della regione per vedere le statistiche: "))
 
 #Fuction
@@ -133,7 +132,6 @@ elif reg == "Veneto":
     
 else:
     print('\nLa regione inserita non esiste..\n')
-
 
 import os
 import sys
