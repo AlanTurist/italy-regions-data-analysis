@@ -1,5 +1,5 @@
-# sars-analysis-for-italy-regions
-SARS Data analysis for every Italian region
+# sars-cov-2-analysis-for-italy-regions
+sars-cov-2 Data analysis for every Italian region
 <!DOCTYPE HTML>
 <html>
   <head>
