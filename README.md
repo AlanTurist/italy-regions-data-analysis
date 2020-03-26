@@ -1,4 +1,4 @@
-# italy-regions-data-analysis
+# sars-analysis-for-italy-regions
 Data analysis for every Italian region
 <!DOCTYPE HTML>
 <html>
