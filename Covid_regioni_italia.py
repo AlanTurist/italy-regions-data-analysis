@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
 import datetime
 data = datetime.datetime.now()
 data1 = data.strftime("%d-%m-%Y %H:%M:%S")
@@ -11,7 +10,6 @@ df = pd.read_csv(url,index_col=0, sep=",")
 
 
 reg = str(input("Inserire il nome della regione per vedere le statistiche: "))
-
 
 #Fuction
 
@@ -28,7 +26,7 @@ def regione(reg, x, y):
     D9 = reg1['totale_casi']
     D10 = reg1['tamponi']
     
-    print('\t~ Analisi di Dati di SARS-CoV2 in',reg,'~')
+    print('\n\t~ Analisi di Dati di SARS-CoV2 in',reg,'~')
     print('\n\t@Author: AlanTurista, alan.turista@gmail.com')
     print('\n****************************************************************************************')
     print("\n\tOggi è il",data1)
@@ -69,7 +67,6 @@ def regione(reg, x, y):
     print('\n\t\t9.1. Il','{0:.2f}'.format(h),'% dei test è stato positivo.')
     
     print('\n****************************************************************************************\n\n')
-
 
 if reg == "Abruzzo":
     regione(reg,0,1313000)
@@ -135,7 +132,7 @@ elif reg == "Veneto":
     regione(reg,20,4905000)
     
 else:
-    print('La regione inserita non esiste..')
+    print('\nLa regione inserita non esiste..\n')
 
 
 import os
