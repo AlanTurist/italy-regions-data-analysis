@@ -8,7 +8,7 @@ import pandas as pd
 url = 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni-latest.csv'
 df = pd.read_csv(url,index_col=0, sep=",")
 
-reg = str(input("Inserire il nome della regione per vedere le statistiche: "))
+reg = str(input("\nInserire il nome della regione per vedere le statistiche: "))
 
 #Fuction
 
@@ -30,7 +30,7 @@ def regione(reg, x, y):
     print('\n****************************************************************************************')
     print("\n\tOggi è il",data1)
     print('\n****************************************************************************************')
-    
+
     print("\n\t1. I casi totali in",reg,"sono:",D9)
     a = (100*D9)/y
     print('\n\t\t1.1. È stato infettato il','{0:.2f}'.format(a),'% della regione.')
@@ -64,6 +64,9 @@ def regione(reg, x, y):
     print("\n\t9. Il numero dei tamponi usati è:",D10)    
     h = (100*D9)/D10
     print('\n\t\t9.1. Il','{0:.2f}'.format(h),'% dei test è stato positivo.')
+
+    print('\n\t10. I ricoverati con sintomi sono:',D1)
+
     
     print('\n****************************************************************************************\n\n')
 
