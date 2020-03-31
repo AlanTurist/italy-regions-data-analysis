@@ -18,8 +18,7 @@ def regione(reg, x, y):
     D2 = reg1['terapia_intensiva']
     D3 = reg1['totale_ospedalizzati']
     D4 = reg1['isolamento_domiciliare']
-    D5 = reg1['totale_attualmente_positivi']
-    D6 = reg1['nuovi_attualmente_positivi']
+    D5 = reg1['totale_positivi']
     D7 = reg1['dimessi_guariti']
     D8 = reg1['deceduti']
     D9 = reg1['totale_casi']
@@ -58,12 +57,10 @@ def regione(reg, x, y):
     print('\n\t7. I positivi sono:',D5)
     g = (100*D5)/D9
     print('\n\t\t7.1. I positivi sono il','{0:.2f}'.format(g),'% dei casi')
-    
-    print('\n\t8. I nuovi attualmente positivi sono:',D6)
-    
-    print("\n\t9. Il numero dei tamponi usati è:",D10)    
+        
+    print("\n\t8. Il numero dei tamponi usati è:",D10)    
     h = (100*D9)/D10
-    print('\n\t\t9.1. Il','{0:.2f}'.format(h),'% dei test è stato positivo.')
+    print('\n\t\t8.1. Il','{0:.2f}'.format(h),'% dei test è stato positivo.')
 
     print('\n\t10. I ricoverati con sintomi sono:',D1)
 
