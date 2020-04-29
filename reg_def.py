@@ -62,9 +62,21 @@ def regione(reg, x, y):
     print('*'*110)
 
     import matplotlib.pyplot as plt
-    labels = 'DECEDUTI','GUARITI','ATTIVI', 'ISOLAMENTO'
-    sizes = [D8, D7, D5, D4]
-    explode = (0, 0.1, 0.1, 0.1)
+    labels = 'DECEDUTI','GUARITI','ATTIVI'
+    sizes = [D8, D7, D5]
+    explode = (0, 0.1, 0.1)
+    fig1,ax1 = plt.subplots(figsize = (24,12))
+    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+        shadow=True, startangle=90)
+    plt.title(reg, fontsize = 24) 
+    ax1.legend(labels, loc = "upper right") 
+    ax1.axis('equal')
+    plt.show()
+
+    import matplotlib.pyplot as plt
+    labels = 'ISOLAMENTO','OSPEDALIZZATI'
+    sizes = [D4, D3]
+    explode = (0.1, 0.1)
     fig1,ax1 = plt.subplots(figsize = (24,12))
     ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
         shadow=True, startangle=90)
