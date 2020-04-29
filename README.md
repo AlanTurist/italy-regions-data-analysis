@@ -13,7 +13,10 @@ sars-cov-2 Data analysis for every Italian region
     <br>
     <img src="https://github.com/AlanTurist/sars-cov-2-analysis-for-italian-regions/blob/master/images/1.jpg" " width="500" height="333">
     <br>
-    <img src="https://github.com/AlanTurist/sars-cov-2-analysis-for-italian-regions/blob/master/images/Lombardia.png" " width="500" height="333">
+    <img src="https://github.com/AlanTurist/sars-cov-2-analysis-for-italian-regions/blob/master/images/Lombardia_Pie1.png" " width="500" height="333">
+    <br>
+    <br>
+    <img src="https://github.com/AlanTurist/sars-cov-2-analysis-for-italian-regions/blob/master/images/Lombardia_Pie2.png" " width="500" height="333">
     <br>
     <br>
     <i>Thanks to<a href="https://github.com/pcm-dpc/COVID-19"> Umberto Rosini</a></i>
